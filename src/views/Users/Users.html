@@ -1,0 +1,10 @@
+<section id="page-home">
+    <div id="items">
+        <h1>Items</h1>
+        <ul class="list">
+            <li v-for="item in items">
+                <router-link :to="{ name: 'item', params: { id: item._id } }">{{ item.title }}</router-link>
+            </li>
+        </ul>
+    </div>
+</section>
